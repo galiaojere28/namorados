@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  background-color: #fdeef1;
+  font-family: Georgia, serif;
+}
+
+.cartao {
+  width: 100%;
+  max-width: 500px;
+  margin: 40px auto;
+  background: #fdeef1 url('https://i.imgur.com/KT1Xnlf.png') repeat;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  text-align: center;
+  position: relative;
+}
+
+.mensagem {
+  font-size: 20px;
+  color: #6b1c1c;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.foto-container {
+  border: 10px solid white;
+  display: inline-block;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.foto {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
