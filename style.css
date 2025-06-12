@@ -1,11 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+* { margin:0; padding:0; box-sizing:border-box; }
 body {
   background: #ffe6e6;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,31 +10,29 @@ body {
 }
 .card {
   background: #ffeaea;
-  border: 5px solid #f4c2c2;
-  border-radius: 15px;
   padding: 20px;
+  border: 4px solid #f4c2c2;
+  border-radius: 15px;
   text-align: center;
-  max-width: 400px;
+  max-width: 450px;
+}
+.card h1 { color: #800; margin-bottom: 10px; font-size: 1.3em; }
+.card h2 { color: #a00; margin-bottom: 20px; font-size: 1.1em; }
+.frame-container {
+  position: relative;
   width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
 }
-.card h1 {
-  font-size: 1.4em;
-  color: #800000;
-  margin-bottom: 10px;
-}
-.card h2 {
-  font-size: 1.2em;
-  color: #a00000;
-  margin-bottom: 20px;
-}
-.frame {
-  border: 8px solid #fff;
-  padding: 5px;
-  border-radius: 10px;
-  background: #fff;
-}
-.frame img {
+.frame-container .photo {
   display: block;
-  max-width: 100%;
+  width: 100%;
+  height: auto;
   border-radius: 5px;
+}
+.frame-container .frame {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
 }
